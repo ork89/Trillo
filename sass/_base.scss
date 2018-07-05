@@ -34,6 +34,12 @@ grey-dark-3: #999;
     --line: 1px solid var(--color-grey-light-2);
 }
 
+$breakPoint-ExLarge: 75em; //1200px
+$breakPoint-Large: 68.75em; //1100px
+$breakPoint-Medium: 56.25em; //900px
+$breakPoint-Small: 37.5em; //600px
+$breakPoint-Smallest: 31.25em; //500px
+
 * {
     margin: 0;
     padding: 0;
@@ -48,6 +54,10 @@ grey-dark-3: #999;
 html {
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px;
+
+    @media only screen and (max-width: $breakPoint-Large) {
+        font-size: 50%;
+    }
 }
 
 body {
